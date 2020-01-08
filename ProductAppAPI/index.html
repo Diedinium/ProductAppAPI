@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Product App</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .list-style {
+            list-style: none;
+            font-style: italic;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="pt-3">Product Search Page Demo</h2>
+
+        <!-- Products list -->
+        <div>
+            <h3>All Products</h3>
+            <ul class="list-style" id="products"></ul>
+        </div>
+
+        <!-- Search/Results form -->
+        <form onsubmit="return false;">
+            <div class="form-group row">
+                <label class="col-form-label col-sm-2">Search by product ID</label>
+                <input type="text" id="prodID" size="5" placeholder="Enter product number" class="form-control col-sm-3" />
+                <button type="button" onclick="find();" value="Search" class="btn btn-primary ml-2">Submit</button>
+                <button type="reset" value="Reset" class="btn btn-danger ml-2">Reset</button>
+            </div>
+            <p id="product" class="font-italic"></p>
+        </form>
+
+    </div>
+    <footer>
+        <script src="Scripts/jquery-3.4.1.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/popper.min.js"></script>
+        <script src="Scripts/Custom/productPage.js"></script>
+    </footer>
+</body>
+</html>
